@@ -62,13 +62,8 @@ export default function LoginPage() {
         return;
       }
 
-      toast({
-        title: "Success",
-        description: "You have been logged in successfully",
-      });
-
-      router.push("/dashboard");
       router.refresh();
+      router.push("/dashboard");
     } catch (error) {
       toast({
         title: "Error",

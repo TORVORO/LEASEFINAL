@@ -81,8 +81,8 @@ export default function RegisterPage() {
         description: "Your account has been created successfully",
       });
       
-      router.push("/dashboard");
       router.refresh();
+      router.push("/dashboard");
     } catch (error) {
       toast({
         title: "Error",
